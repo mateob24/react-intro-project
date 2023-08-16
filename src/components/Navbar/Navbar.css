@@ -13,6 +13,7 @@ nav{
   display: flex;
   align-items:center;
   justify-content: space-between;
+  position: absolute;
   background-color: rgb(106, 106, 106);
 }
 

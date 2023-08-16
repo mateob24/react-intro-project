@@ -1,4 +1,4 @@
-// import React from 'react'
+
 import "../Product/Product.css"
 import { FaPlus } from "react-icons/fa";
 

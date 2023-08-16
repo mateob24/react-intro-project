@@ -1,22 +1,26 @@
-// import React from 'react'
+
 import "../Navbar/Navbar.css"
+import { NavLink } from "react-router-dom";
 
 const profile = 'https://dragonball-zxk.com/wp-content/uploads/2023/03/dragonball.png'
 
 export const Navbar = () => {
   return (
     <>
+
       <nav>
-        <nav className="ident">
+        <div className="ident">
           <img src={profile} id="img-header" alt="img" />
           <h1 className='title'>MB</h1>
-        </nav>
+        </div>
         <ul>
-          <li><a href="#">Inicio</a></li>
-          <li><a href="#">Acerca de</a></li>
-          <li><a href="#">Productos</a></li>
+          <li><NavLink to='/' >Home</NavLink></li>
+          <li><NavLink to='*' >My projects</NavLink></li>
+          <li><NavLink to='' >About me</NavLink></li>
+          <li><NavLink to='/Contact' >Contact</NavLink></li>
         </ul>
       </nav>
+      
     </>
   )
 }
