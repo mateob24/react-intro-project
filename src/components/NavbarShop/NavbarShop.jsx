@@ -1,10 +1,9 @@
-import { useState } from "react";
+
 import { FaCartPlus } from "react-icons/fa";
 import "./NavbarShop.css"
 
-export const NavbarShop = () => {
-
-  const [count, setCount] = useState(0);  
+// eslint-disable-next-line react/prop-types
+export const NavbarShop = ({count}) => {
 
   return (
     <>

@@ -3,13 +3,9 @@ import { FaPlus } from "react-icons/fa";
 import { useState } from 'react';
 import { useEffect } from 'react';
 
-export const Product = () => {
+// eslint-disable-next-line react/prop-types
+export const Product = ({eventClick}) => {
   const [products, setProducts] = useState([])
-  const [count, setCount] = useState(0);
-
-  const handleClick = () => {
-    setCount(count + 1);
-  };
 
    async function getData () {
     const response = await fetch('https://fakestoreapi.com/products')
@@ -28,7 +24,7 @@ export const Product = () => {
       {products.map((product) => (
         <div key={product.id} className="w-96 h-80 bg-white shadow-lg relative rounded-xl flex flex-col items-center justify-around">
           <div>
-            <button onClick={handleClick} id='add-cart' className="p-3 m-1 absolute right-px rounded-full bg-gray-200"><FaPlus /></button>
+            <button onClick={eventClick} id='add-cart' className="p-3 m-1 absolute right-px rounded-full bg-gray-200"><FaPlus /></button>
           </div>
           <div className='h-2/3 flex items-center justify-center rounded-t-xl'>
             <img src={product.image} alt={product.title} className="h-48 object-cover" />
