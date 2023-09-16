@@ -1,0 +1,10 @@
+#products{
+    height: 100%;
+    background-color: rgb(28, 28, 28);
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+#add-cart:hover{
+    background-color: rgb(15 118 110);
+}

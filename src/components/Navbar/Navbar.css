@@ -7,7 +7,7 @@
 }
 
 
-nav{
+#nav{
   height: 12vh;
   width: 100%;
   display: flex;
@@ -40,7 +40,7 @@ nav{
   /* text-shadow: 0 0 4px black; */
 }
 
-ul{
+#nav-link{
   width: 50%;
   list-style:none;
   display: flex;
@@ -49,7 +49,7 @@ ul{
   justify-content: center;
 }
 
-li a{
+#nav-link li a{
   text-decoration: none;
   font-size: 22px;
   font-weight: 900;

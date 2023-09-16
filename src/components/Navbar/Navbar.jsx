@@ -8,16 +8,17 @@ export const Navbar = () => {
   return (
     <>
 
-      <nav>
+      <nav id="nav">
         <div className="ident">
           <img src={profile} id="img-header" alt="img" />
           <h1 className='title'>MB</h1>
         </div>
-        <ul>
+        <ul id="nav-link">
           <li><NavLink to='/' >Home</NavLink></li>
-          <li><NavLink to='*' >My projects</NavLink></li>
-          <li><NavLink to='' >About me</NavLink></li>
+          {/* <li><NavLink to='*' >My projects</NavLink></li> */}
+          <li><NavLink to='*' >About me</NavLink></li>
           <li><NavLink to='/Contact' >Contact</NavLink></li>
+          <li><NavLink to='/Shop' >Shop</NavLink></li>
         </ul>
       </nav>
       
